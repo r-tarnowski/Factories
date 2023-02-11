@@ -16,7 +16,7 @@ void printHeader() {
 
 int main(int argc, char *argv[]) {
    printHeader();
-   
+
    cout << endl;
    return 0;
 }
