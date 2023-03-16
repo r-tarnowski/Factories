@@ -8,5 +8,6 @@ Testing/*
 bin/factory_method
 bin/factory
 bin/internal_factory
+bin/abstract_factory
 build.ninja
 cmake_install.cmake

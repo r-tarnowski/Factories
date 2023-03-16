@@ -14,6 +14,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BIN_DIR})
 set(TARGET_FACTORY_METHOD factory_method)
 set(TARGET_FACTORY factory)
 set(TARGET_INTERNAL_FACTORY internal_factory)
+set(TARGET_ABSTRACT_FACTORY abstract_factory)
 
 include_directories(${INCLUDE_DIR} "/export/devel/platform/boost/$ENV{BOOST_VERSION}/boost/include")
 
@@ -25,12 +26,14 @@ set(CMAKE_CXX_FLAGS "-fPIC -O3 -Wall -Wno-unused-function -std=c++20")
 set(SOURCES_FACTORY_METHOD ${SRC_DIR}/FactoryMethod.cpp)
 set(SOURCES_FACTORY ${SRC_DIR}/Factory.cpp)
 set(SOURCES_INTERNAL_FACTORY ${SRC_DIR}/InternalFactory.cpp)
+set(SOURCES_ABSTRACT_FACTORY ${SRC_DIR}/AbstractFactory.cpp)
 
 #add_library(${TARGET_LIB} STATIC ${SOURCES_LIB})
 
 add_executable(${TARGET_FACTORY_METHOD} ${SOURCES_FACTORY_METHOD})
 add_executable(${TARGET_FACTORY} ${SOURCES_FACTORY})
 add_executable(${TARGET_INTERNAL_FACTORY} ${SOURCES_INTERNAL_FACTORY})
+add_executable(${TARGET_ABSTRACT_FACTORY} ${SOURCES_ABSTRACT_FACTORY})
 
 
 

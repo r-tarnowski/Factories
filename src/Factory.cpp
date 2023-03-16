@@ -43,7 +43,7 @@ public:
 
 
 
-int main(int argc, char *argv[]) {
+int main(int argc, char * argv[] ) {
    printHeader();
 
    Point cartesianPoint = PointFactory::newCartesianPoint( 1.0, 2.0 );
